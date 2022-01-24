@@ -16,13 +16,13 @@ const InformacionCiudad = ({ciudad,grados}) => {
             {/* Usamos un renderizado condicional anidado */}
             {
                 centigrados > 20 ?(
-                    <div className='iconoClima'> <img src={sol}/> </div>
+                    <div className='iconoClima'> <img src={sol} alt='sol'/> </div>
                 ) : (
                     centigrados < 19 ? (
-                        <div className='iconoClima'> <img src={nublado}/> </div>
+                        <div className='iconoClima'> <img src={nublado} alt='numblado'/> </div>
                     ) : (
                         centigrados < 14 ? (
-                            <div className='iconoClima'> <img src={frio}/> </div>
+                            <div className='iconoClima'> <img src={frio} alt='frio'/> </div>
                         ) : (
                             <p>No esta la opcion</p>
                         )
